@@ -33,4 +33,4 @@ def Prims(file , initial_vertex = 0,show = False, cost = False):
         return "Optimal Spanning Tree cost" + str(cost)
     return T
 
-Prims('G.txt')
+Prims('graph.txt')
