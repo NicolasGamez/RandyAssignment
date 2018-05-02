@@ -1,6 +1,6 @@
 from Weighted_Graph import *
 
-G = Weighted_Graph("G.txt")
+G = Weighted_Graph("graph.txt")
 
 G.draw_graph()
 
