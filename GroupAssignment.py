@@ -33,7 +33,13 @@ def valid_edges(T):
     temp_edges = []
     for e in edges:
         if e[0] not in T[0] and e[1] not in T[0]:
-            edges.append(e)
+            temp_edges.append(e)
+    return temp_edges
+
+# Find the minimum of the valid edges
+    
+def min_valid_edges(G,T):
+    edges= min(valid_edges(T))
     return edges
 
 
