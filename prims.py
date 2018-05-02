@@ -18,7 +18,7 @@ def Prims(file , initial_vertex = 0,show = False, cost = False):
     while T[0] != G.vertex_set():
         if show == True:
             G.draw_subgraph(T)
-        e = min_valid_edge(G,T)
+        e = min_valid_edges(G,T)
         T[1].append(e)
         for v in e:
             T[0].add(v)
