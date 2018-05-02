@@ -41,15 +41,3 @@ def valid_edges(T):
 def min_valid_edges(G,T):
     edges= min(valid_edges(T))
     return edges
-
-
-
-#print(valid_edges(T))
-print (incident_edges(T))
-
-# Find the minimum of the valid edges
-    
-def min_valid_edges(G,T):
-    edges= min(valid_edges(T))
-    return edges
-
