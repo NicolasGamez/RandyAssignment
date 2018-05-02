@@ -25,13 +25,7 @@ def incident_edges(T):
                 temp_edges.append(e)
                 
     return temp_edges
-'''
-V_T = (0,2,3)
-E_T = (0,2),(2,3)
-T = (V_T,E_T)
 
-print (incident_edges(T))
-'''
 # Find Valid edges
 
 def valid_edges(T):
@@ -42,9 +36,7 @@ def valid_edges(T):
             edges.append(e)
     return edges
 
-V_T = (0,2,3,4) 
-E_T = [(0,2),(2,3),(2,4)]
-T = (V_T,E_T)
+
 
 #print(valid_edges(T))
 print (incident_edges(T))
