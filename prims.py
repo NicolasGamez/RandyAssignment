@@ -3,7 +3,7 @@ from Weighted_Graph.classes.WG import Weighted_Graph
 from Weighted_Graph.functions.Prims_functions import min_valid_edge
 from Weighted_Graph.functions.general_weighted_functions import c
 '''
-from GroupAssignment import *
+from Prims_Functions import *
 from Weighted_Graph import *
 
 
