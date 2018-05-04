@@ -32,18 +32,13 @@ def min_valid_edges(G,T):
     cost = []
     minimum_edges=[]
     e=0
-    #print('minimum edges start', minimum_edges )
     for i in edges:
-        #print(c(edges[e]))
         cost.append(c(edges[e]))
         minimum_edges.append(edges[e])
         e+=1
-    #print(min(cost))
-    #print('minimum edges end', minimum_edges )
-    #print('cost', cost)
     minimum = min(cost)
     j=0
-    
+ 
     for x in cost:
         if minimum == cost[j]:
             return minimum_edges[j]
@@ -52,9 +47,4 @@ def min_valid_edges(G,T):
         
     
     
-'''    for x in cost:
-        if cost[j] == minimum:
-            minimum_edges=[]
-'''
 
-#print(min_valid_edges(G,T))
