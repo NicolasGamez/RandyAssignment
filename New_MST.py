@@ -1,15 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr 25 10:36:40 2018
+from Weighted_Graph import *
+from prims_functions import *
+from prims import *
 
-@author: rakix
-"""
+G = Weighted_Graph("G.txt")
 
-from Prim import Prims
-from Kruskals import Kruskals 
+#Setting up tree
+V_T = {0}
+E_T= []
+T = (V_T,E_T)
 
-def MST(textfile, solver = 'Prims', , cost = False, show = False):
-    if solcer == 'Kruskals':
-        return Kruskals(textfile, cost, show)
-    else:
-        return Prims(textfile, cost, show)
+print(Prims('G.txt', show = True, cost = True))
