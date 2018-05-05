@@ -3,18 +3,14 @@ from prims_functions import *
 
 G = Weighted_Graph("G.txt")
 
-#Setting up tree
-V_T = {0}
-E_T= []
-
-T = (V_T,E_T)
-
 def Prims(file , initial_vertex = 0,show = False, cost = False):
     G = Weighted_Graph(file)
     
     if show == True:
+        print('Initial Graph:')
         G.draw_graph()
-        
+        print('MST Path:')
+            
     T=({initial_vertex}, [])
     while T[0] != G.vertex_set():
         if show == True:
@@ -31,7 +27,5 @@ def Prims(file , initial_vertex = 0,show = False, cost = False):
         cost = 0
         for e in T[1]:
             cost += c(e)
-        print( "Optimal Spanning Tree cost: " + str(cost))
+        print( "Optimal Spanning Tree Cost: " + str(cost))
     return T
-
-
