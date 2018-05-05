@@ -29,10 +29,10 @@ def valid_edges(T):             #Finds the edges that are not used
 
 def min_valid_edges(G,T):       #Finds the lowest cost of the valid edge sets 
     edges = valid_edges(T)
-    costs = []                   #list to store the costs of each valid edge set
-    minimum_edges=[]            #list to store the corresponding edge set
+    costs = []                  #List to store the costs of each valid edge set
+    minimum_edges=[]            #List to store the corresponding edge set
     e=0
-    for i in edges:             #Builds Cost list and Minimum_edges Simultaneously
+    for i in edges:             #Builds Cost list and Minimum_edges simultaneously
         costs.append(c(edges[e]))
         minimum_edges.append(edges[e])
         e+=1
