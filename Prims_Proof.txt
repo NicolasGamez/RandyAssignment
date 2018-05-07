@@ -1,0 +1,12 @@
+Nicolas Gamez
+Kevin Nguyen
+Akrixs Radilla
+
+Prims Proof
+
+Theorem: If G is a connected weighted graph Prim’s algorithm will correctly find the MST.
+Proof: Let T be the spanning tree found by Prim’s algorithm and T* be the MST of G.  By way of contradiction, we prove that T = T*.  Assume T =/= T*, therefore, T-T* =/= (/) Let, (U,V) be any edge T-T*.
+
+When (U,V) is added to T, it was the least-cost edge crossing some cut(S,V-S). Since T* is an MST, there must be a  path from U to V in T*. The path begins across, S and ends in V-S, so there must be some edge (x,y)  alongs that path where x E S and y E V-S. Since (u,v) is there least-cost edge crossing (S, V-S) we have c(u,v) – c(x,y) < c(T*), contradicting that T* is an MST.
+Since we have reached our contradiction, we can assume that T=T*, implying T is an MST.
+

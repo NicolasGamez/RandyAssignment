@@ -1,19 +1,16 @@
-'''
-from Weighted_Graph.classes.WG import Weighted_Graph
-from Weighted_Graph.functions.Prims_functions import min_valid_edge
-from Weighted_Graph.functions.general_weighted_functions import c
-'''
-from GroupAssignment import *
 from Weighted_Graph import *
+from prims_functions import *
 
+G = Weighted_Graph("G.txt")
 
 def Prims(file , initial_vertex = 0,show = False, cost = False):
     G = Weighted_Graph(file)
     
-
     if show == True:
+        print('Initial Graph:')
         G.draw_graph()
-        
+        print('MST Path:')
+            
     T=({initial_vertex}, [])
     while T[0] != G.vertex_set():
         if show == True:
@@ -29,8 +26,6 @@ def Prims(file , initial_vertex = 0,show = False, cost = False):
     if cost == True:
         cost = 0
         for e in T[1]:
-            cost += c(G,e)
-        return "Optimal Spanning Tree cost" + str(cost)
+            cost += c(e)
+        print( "Optimal Spanning Tree Cost: " + str(cost))
     return T
-
-Prims('graph.txt')
